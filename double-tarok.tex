@@ -2,6 +2,7 @@
 
 \usepackage[slovene]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{tabularx}
 
 \author{Lenart Bučar}
 \title{Tarok z dvema paketoma kart}
@@ -9,16 +10,89 @@
 
 \begin{document}
 
+\part{Uvod}
+
+\chapter{Karte}
+
+Igra se z dvema paketoma 54 tarok kart (108 kart), ki morajo biti v obeh enake velikosti, priporočljivo pa je, da se jih lahko enostavno loči med sabo.
+Večina pravil je enakih kot pri navadnem taroku, posebnosti pa so opisane spodaj.
+
+
 \part{Štirje igralci}
 
 \chapter{Mešanje in Deljenje kart}
-\chapter{Licitacija}
+
+Oba paketa kart se zmešata skupaj.
+
+Na začetku (ali po prvem krogu) se oddeli 12 zaporednih kart v talon. Pri vsakem krogu dobi vsak igralec 12 kart, skupaj 24.
+
+\chapter{Licitacija in napovedi}
+
+Licitacija ter napovedi potekajo kot pri običajnem taroku.
+Možne licitacije (Po moči) so:
+
+\begin{table}
+  \caption{Licitacije pri štirih igralcih}
+  \begin{tabularx}{\textwidth}{lXr}
+    \hline \hline
+    \textbf{Licitacija} & \textbf{Razlaga} & \textbf{Vrednost} \\ \hline \hline
+    Šestica & Igralec zamenja šest svojih kart s tistimi iz talona & 10 \\
+    Štirica & Igralec zamenja štiri svoje karte s tistimi iz talona & 20 \\
+    Trojka & Igralec zamenja tri svoje karte s tistimi iz talona & 30 \\
+    Dvojka & Igralec zamenja dve svoji karti s tistimi iz talona & 40 \\
+    Enka & Igralec zamenja eno svojo karto s tistimi iz talona & 50 \\
+    Solo Šestica & Igralec zamenja šest svojih kart s tistimi iz talona ampak pri tem ne kliče soigralca & 60 \\
+    Solo Štirica & Igralec zamenja štiri svoje karte s tistimi iz talona ampak pri tem ne kliče soigralca & 70 \\
+    Solo Trojka & Igralec zamenja tri svoje karte s tistimi iz talona ampak pri tem ne kliče soigralca & 80 \\
+    Solo Dvojka & Igralec zamenja dve svoji karti s tistimi iz talona ampak pri tem ne kliče soigralca & 90 \\
+    Solo Enka & Igralec zamenja eno svojo karto s tistimi iz talona ampak pri tem ne kliče soigralca & 100 \\
+    Berač & Igralec se zaveže, da med igro ne bo pobral nobenega vzetka & 110 \\
+    Solo Brez & Igralec igra sam proti vsem ostalim, talon ostane neodkrit & 120 \\
+    Barvni valat & Enako kot valat, le da taroki niso aduti & 200 \\
+    Valat & Igralec se zaveže, da bo pobral vse karte & 500 (tihi: 250)\\
+    Klop & Licitacija se izvede v primeru, da nihče ni licitiral ničesar drugega & Odvisno od igre \\ \hline \hline
+  \end{tabularx}
+\end{table}
+
+Po licitacijah (ter pred odprtjem talona) igralec kliče kralja (tisti ki ima tega kralja, bo njegov soigralec), tako da pove barvo kralja ter značilnost, po kateri se oba paketa kart loči med sabo (npr. Pikov kralj z modrio hrbtno stranjo; če imamo karte, ki so na hrbtni strani modre ter rdeče).
+
+Po zamenjavi talona (če je do tega prišlo in če igra ni berač ali klop), pridejo na vrsto napovedi. Le-te lahko napove vsak.
+
+Pri napovedih je tudi možno, da ko igralec napove neko napoved (npr. Trulo) lahko kdo drug napove višjo napoved iz istega sklopa (npr. Dvojno Trulo). Če se na koncu igre razve, da sta igralca skupaj, se upošteva le višjo napoved, drugače pa vsako posebaj.
+
+Če igralec napove Trulo, a na koncu naredi (tiho) Barvno Trulo, se to šteje samo kot tiha Barvna Trula.
+
+Možne napovedi:
+\begin{table}
+  \caption{Licitacije pri štirih igralcih}
+  \begin{tabularx}{\textwidth}{lXr{5cm}}
+    \hline \hline
+    \textbf{Napoved} & \textbf{Razlaga} & \textbf{Vrednost} (tiha vrednost je polovična) \\ \hline \hline
+    Kralji & Ekipa ima v svojih vzetkih štiri različne kralje & 20 \\
+    Barvni kralji & Ekipa ima v svojih vzetkih vse kralje iz enega točno določenega paketa & 30 \\ % TODO: Točno določenega ali kateregakoli, samo da je en paket
+    Dvojni kralji & Ekipa ima v svojih vzetkih vseh osem kraljev & 40 \\ \hline
+    Trula & Ekipa ima v svojih vzetkih Škisa, Monda in pagata & 20 \\
+    Barvna Trula & Ekipa ima v svojih vzetkih celotno trulo iz enega točno določenega paketa & 30 \\ % TODO: Točno določenega ali kateregakoli, samo da je en paket
+    Dvojna Trula & Ekipa ima v svojih vzetkih dva Škisa, dva monda, in dva pagata & 40 \\ \hline
+    Pagat ultimo & Igralec se zaveže, da bo zadnji vzetek \textbf{pobral} s Pagatom & 50 \\
+    Dvojni pagat ultimo & V primeru, da v zadnjem vzetku padeta oba pagata (ki sta ju vrgla člana iste ekipe) te eden izmed njiju pobere, je napoved uspešno realizirana & 100 \\ \hline
+    Kralj ultimo & Klican kralj bo padel v zadnjem vzetku in pripadel igralcema, ki igro igrata & 20 \\
+    \hline \hline
+  \end{tabularx}
+\end{table}
+
+\chapter{Igranje}
+
+\part{Šest igralcev}
+
+\chapter{Mešanje in Deljenje kart}
+\chapter{Licitacija in napovedi}
 \chapter{Igranje}
 
 \part{Osem igralcev}
 
 \chapter{Mešanje in Deljenje kart}
-\chapter{Licitacija}
+\chapter{Licitacija in napovedi}
 \chapter{Igranje}
 
 
